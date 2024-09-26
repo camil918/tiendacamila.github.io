@@ -1,0 +1,95 @@
+
+
+
+
+
+
+
+
+
+    
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - La Boutique de los Detalles</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function realizarCompra(producto) {
+            
+            let nombre = prompt("Ingresa tu nombre:");
+            let correo = prompt("Ingresa tu correo electrónico:");
+            let celular = prompt("Ingresa tu número de celular:");
+
+            if (nombre && correo && celular) {
+                
+                console.log("Gracias por tu compra, " + nombre + "!");
+
+                
+                alert("Gracias por tu compra, " + nombre + "!");
+
+               
+                let cantidadProductos = 3; 
+                if (cantidadProductos >= 3) {
+                    alert("Tienes un descuento por comprar 3 productos.");
+                }
+            } else {
+                alert("Compra cancelada. Debes proporcionar toda la información.");
+            }
+        }
+    </script>
+</head>
+<body>
+  
+    <header>
+        <h1>Regalos de Amor y Amistad</h1>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="productos">
+        <h2>Productos ofrecidos</h2>
+        <table>
+            <tr>
+                <th>Producto</th>
+                <th>Imágenes</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Comprar</th>
+            </tr>
+            <tr>
+                <td>Anchetas</td>
+                <td><img src="imagenes.jpg/amor y amistad/ancheta.jpg" alt="Anchetas" class="producto-imagen"></td>
+                <td>Producto surtido</td>
+                <td>$60.000</td>
+                <td><button onclick="realizarCompra('Anchetas')">Comprar</button></td>
+            </tr>
+            <tr>
+                <td>Caja de Chocolates</td>
+                <td><img src="imagenes.jpg/amor y amistad/chocolates.jpg" alt="Caja de Chocolates" class="producto-imagen"></td>
+                <td>Una caja con chocolates surtidos.</td>
+                <td>$50.000</td>
+                <td><button onclick="realizarCompra('Caja de Chocolates')">Comprar</button></td>
+            </tr>
+            <tr>
+                <td>Ramo de Rosas</td>
+                <td><img src="imagenes.jpg/amor y amistad/rosas.jpg" alt="Ramo de Rosas" class="producto-imagen"></td>
+                <td>Un hermoso ramo de 12 rosas rojas.</td>
+                <td>$60.000</td>
+                <td><button onclick="realizarCompra('Ramo de Rosas')">Comprar</button></td>
+            </tr>
+        </table>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 Los mejores regalos de Amor y Amistad. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

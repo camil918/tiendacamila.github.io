@@ -1,0 +1,91 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #77dd77;
+    
+    color: #333;
+
+    header {
+        background-color:#f74fd0 ;
+       
+        padding: 20px;
+        text-align: center;
+        color: black;
+    }
+    .cuadro-titulo {
+        background-color: #75c2f9; 
+        border: 2px solid #ccc; 
+        padding: 20px; 
+        margin: 20px 0; 
+        border-radius: 8px; 
+        text-align: center; 
+    }
+    header h1 {
+        margin: 0;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+    nav ul li a {
+        color: black;
+        text-decoration: none;
+    }
+
+    section {
+        padding: 20px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+    table, th, td {
+        border: 1px solid #4afde7;
+    }
+    
+    th, td {
+        padding: 10px;
+        text-align: left;
+    }
+    button {
+        background-color: #ff85d5;
+        color: black;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #e79eff;
+    }
+    footer {
+        background-color: #f74fd0;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+    .producto-imagen {
+        width: 150px; 
+        height: auto; 
+        margin: 10px 0; 
+        border: 2px solid #4afde7; 
+        border-radius: 5px; 
+    }
+    .imagenes-fondo {
+        display: flex; 
+        justify-content: space-between; 
+        height: 300px; 
+        padding: 20px;
+    }
+   
+    
+}

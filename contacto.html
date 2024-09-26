@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de contacto - Boutique de Regalos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a la Boutique de Regalos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <p>Para más información, por favor rellena el siguiente formulario:</p>
+        
+        <form method="POST">
+            
+                <tr>
+                    <td><label for="nombre">Nombre:</label></td>
+                    <td><input type="text" id="nombre" name="nombre" required></td>
+                </tr>
+                <tr>
+                    <td><label for="correo">Correo electrónico:</label></td>
+                    <td><input type="email" id="correo" name="correo" required></td>
+                </tr>
+                <tr>
+                    <td><label for="contacto">Contacto:</label></td>
+                    <td><input type="text" id="contacto" name="contacto" required></td>
+                </tr>
+                <tr>
+                    <td><label for="celular">Número de Celular:</label></td>
+                    <td><input type="tel" id="celular" name="celular" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                       
+                        <button type="submit">Enviar</button>
+
+                       
+                        <button type="reset">Limpiar</button>
+                    </td>
+                </tr>
+           
+        </form>
+
+       
+        <div id="mensaje-gracias" style="display:none; color: green; font-weight: bold;">
+            Gracias, tu solicitud está siendo procesada.
+        </div>
+    </section>
+
+   
+    <script>
+       
+        const formulario = document.querySelector('form');
+        const mensajeGracias = document.getElementById('mensaje-gracias');
+
+        formulario.addEventListener('submit', function(event) {
+           
+            event.preventDefault();
+
+            
+            mensajeGracias.style.display = 'block';
+
+            
+            formulario.reset();
+        });
+    </script>
+</body>
+</html>
